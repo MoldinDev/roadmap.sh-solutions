@@ -2,6 +2,7 @@
 Repository for roadmap.sh project solution
 
 https://roadmap.sh/projects/single-page-cv
+https://roadmap.sh/projects/basic-html-website
 
 This is my project folder, to apply what i learned
 
