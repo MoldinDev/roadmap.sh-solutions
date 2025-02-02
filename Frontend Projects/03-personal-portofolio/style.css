@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: cursive;
+}
+
+.container {
+    border: 5px solid black;
+    z-index: 10;
+    min-height: calc(100vh - 10px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0;
+}
+
+main section .project h2 {
+    font-size: min(1.5em, 3vw);
+    margin: 10px;
+}
+
+main section .work-exp h2 {
+    font-size: min(1.5em, 3vw);
+    margin: 20px 10px;
+}
+
+main section .edu h2 {
+    font-size: min(1.5em, 3vw);
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+}
+
+.nav-links li a:link {
+    color: black;
+}
+
+.nav-links li {
+    border-right: 2px solid black;
+    padding: 0 8px;
+}
+
+.nav-links li:last-child {
+    border-right: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-bottom: 5px solid black;
+}
+
+h1 {
+    font-size: min(3rem, 5vw);
+}
+
+.hero p {
+    color: rgba(0,0,0,0.5);
+    font-size: min(2vw, 20px);
+}
+
+.main {
+    display: flex;
+}
+
+.main div:not(.exp) {
+    width: 33%;
+    border-right: 2px solid black;
+    border-bottom: 5px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main div:last-child {
+    border-right: 0;
+}
+
+.main div h2 {
+    font-size: 20px;
+}
+
+.main div p, .main div li, main div a, h4 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.exp {
+    margin-bottom: 30px;
+}
+
+.project-list li {
+    list-style: none;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.project-list {
+    gap: 0;
+    padding-left: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.project-list li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.review {
+    gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.review-card {
+    border: 2px solid black;
+    width: max(30%, 300px);
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5)
+}
+
+.review-name {
+    color: rgba(0,0,0,0.5);
+}
+
+.footer {
+    align-self: center;
+    margin: 100px 0 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        border: none;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main div p, .main div li, main div a, h4 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .nav-links {
+        padding-left: 0;
+    }
+    
+    .hero {
+        height: auto;
+        padding-bottom: 25px;
+    }
+    
+    .hero h1 {
+        margin-bottom: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .main div:not(.exp) {
+        width: auto;
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: gainsboro;
+        gap: 0;
+    }
+
+    .project-list li {
+        width: 100%;
+        margin: 0;
+        background-color: gainsboro;
+    }
+
+    .main div h2 {
+        text-align: center;
+    }
+    
+    .exp {
+        background-color: gainsboro;
+        padding: 15px 20px;
+        margin: 0;
+        border-top: solid 2px black;
+    }
+
+    .main div li, main div a {
+        margin: 0;
+    }
+
+    .main div li:first-child {
+        border-top: 2px solid black;
+    }
+
+    .edu p {
+        padding-bottom: 30px;
+    }
+    
+    .review {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .review-card {
+        width: min(90%, 350px);
+    }
+}
